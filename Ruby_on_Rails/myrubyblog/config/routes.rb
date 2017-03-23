@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'home/index'
   resources :posts #In order for us to use the URL structure to go to slash post slash post edit show, to use 7 actions we need to clean the resource
+  resources :categories
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
