@@ -1,2 +1,15 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<h1>Listing Categories</h1>
+<table>
+	<tr>
+		<th>Name</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @categories.each do |category| %>
+	<tr>
+		<td><%= category.name %></td>
+	</tr>
+<% end %>
+</table>
